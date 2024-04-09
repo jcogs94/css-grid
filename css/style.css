@@ -19,7 +19,7 @@ body {
         "fill"
         "footer";
     
-    min-width: 247px;
+    min-width: 280px;
     background-color: red;
 
     /* test */
@@ -80,8 +80,9 @@ button {
 }
 
 footer {
-    height: 100px;
+    height: 125px;
     grid-area: footer;
+    background-color: #F2F2F2;
 
     display: grid;
     grid-template-rows: auto auto;
@@ -89,11 +90,15 @@ footer {
     grid-template-areas: 
         "logo product features"
         "logo resources company";
-    background-color: #F2F2F2;
+}
+
+footer * {
+    margin: auto 0;
 }
 
 #company-info {
     grid-area: logo;
+    margin: auto;
 }
 
 #product {
@@ -112,14 +117,81 @@ footer {
     grid-area: company;
 }
 
-footer div ul * {
-    font-size: .5rem;
+.footer-resources ul *, #company-info ul *{
+    font-size: .6rem;
     display: block;
+}
+
+.footer-resources h6 {
+    font-size: .65rem;
+}
+
+#company-info > h5 {
+    font-weight: bolder;
+    font-size: .8rem;
 }
 
 @media (min-width: 477px) {
     .nav-links {
         max-width: 155px;
+    }
+
+    footer {
+        height: 150px;
+    
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "logo product features resources company";
+    }
+
+    .footer-resources ul *, #company-info ul *{
+        font-size: .85rem;
+        display: block;
+    }
+    
+    .footer-resources h6 {
+        font-size: .9rem;
+    }
+    
+    #company-info > h5 {
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        height: 62px;
+    }
+    
+    .nav-links {
+        list-style: none;
+        margin-left: 10px;
+        font-weight: bolder;
+        max-width: 185px;
+    }
+    
+    li {
+        display: inline-block;
+        font-size: .9rem;
+        margin: 2px;
+    }
+
+    nav > h1 {
+        font-size: 2rem;
+    }
+    
+    button {
+        font-size: .8rem;
+        padding: 2px 5px;
+        border-radius: 4px;
+        width: 95px;
+        height: 2em;
+    }
+
+    #nav-button {
+        margin: auto 25px auto auto;
     }
 }
 
