@@ -11,11 +11,12 @@
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr 1fr auto;
     grid-template-columns: 100%;
     grid-template-areas: 
         "nav"
         "hero"
+        "social-proof"
         "footer";
     
     min-width: 280px;
@@ -142,6 +143,36 @@ button {
 
 #dot-left {
     margin-left: 8px;
+}
+
+#social-proof {
+    grid-area: social-proof;
+    height: 100px;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1fr;
+    /* margin: auto; */
+}
+
+#social-proof > h3 {
+    margin: auto;
+    text-align: center;
+    font-size: .8rem;
+}
+
+#social-logos {
+    margin: 15px auto auto;
+}
+
+.logo {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #000000;
+    margin: auto 3px;
 }
 
 /* Footer */
