@@ -69,6 +69,7 @@ button {
     border-radius: 2px;
     width: 65px;
     height: 2em;
+    cursor: pointer;
 }
 
 #nav-button {
@@ -83,21 +84,32 @@ button {
     grid-template-columns: auto;
 
     margin: auto;
-    height: 440px;
+    /* height: 440px; */
+    min-height: 100%;
+    width: 100%;
     background-color: #F2F2F2;
 }
 
 #hero-img-placeholder {
     border: 1px solid #000000;
     border-radius: 2px;
-    width: 260px;
-    height: 186.27px;
+    
+    display: block;
+    max-width: 670px;
+    max-height: 480px;
+    width: 95%;
+    /* height:auto; */
+    aspect-ratio: 1.13958 / 1;
+
+    /* width: 260px;
+    height: 186.27px; */
     margin: 10px auto 15px;
     background-color: #FFFFFF;
 }
 
 #hero-content {
     margin: auto;
+    max-width: 260px;
 }
 
 #hero-content * {
@@ -115,6 +127,7 @@ button {
 
 #hero-button {
     margin: 5px 8px auto;
+    padding: 0;
     width: 80px;
     font-size: .5rem;
     text-align: center;
@@ -216,6 +229,54 @@ footer * {
     }
 }
 
+@media (min-width: 540px) {
+    #hero {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 3fr 4fr;
+    }
+    
+    #hero-content {
+        max-width: 422px;
+        margin: auto;
+    }
+    
+    #hero-content * {
+        padding: 5px 30px;
+    }
+    
+    #hero-content > h1 {
+        font-size: 1.5rem;
+    }
+    
+    #hero-content {
+        font-size: .9rem;
+    }
+    
+    #hero-img-placeholder {
+        margin: auto;
+    }
+    
+    #hero-button {
+        margin: 5px 30px auto;
+        width: 200px;
+        height: 60px;
+        padding: auto 0 auto;
+
+        font-size: .5rem;
+        text-align: center;
+    }
+    
+    .hero-img-dots {
+        height: 12px;
+        width: 12px;
+    }
+    
+    #dot-left {
+        margin-left: 8px;
+    }
+}
+
 @media (min-width: 768px) {
     nav {
         height: 62px;
@@ -248,6 +309,18 @@ footer * {
 
     #nav-button {
         margin: auto 25px auto auto;
+    }
+    
+    #hero-img-placeholder {
+        /* width: 400px;
+        height: 286.57px; */
+    }
+}
+
+@media (min-width: 1200px) {
+    #hero-img-placeholder {
+        width: 670px;
+        height: 480px;
     }
 }
 
