@@ -100,8 +100,7 @@ button {
     width: 90%;
     aspect-ratio: 1.13958 / 1;
 
-    
-    margin: 10px auto 15px;
+    margin: 15px auto 15px;
     background-color: #FFFFFF;
 }
 
@@ -153,7 +152,6 @@ button {
     display: grid;
     grid-template-rows: 1fr 1.5fr;
     grid-template-columns: 1fr;
-    /* margin: auto; */
 }
 
 #social-proof > h3 {
@@ -233,6 +231,38 @@ footer * {
     .nav-links {
         max-width: 155px;
     }
+    
+    #hero-content {
+        margin-top: 15px;
+    }
+
+    #hero-img-placeholder {
+        margin-top: 25px;
+    }
+    
+    #company-info > h5 {
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+    
+    #social-proof {
+        height: 120px;
+        padding-top: 15px;
+    }
+    
+    #social-proof > h3 {
+        font-size: 1.2rem;
+    }
+    
+    #social-logos {
+        margin: 15px auto auto;
+    }
+    
+    .logo {
+        height: 30px;
+        width: 30px;
+        margin: auto 5px;
+    }
 
     footer {
         height: 150px;
@@ -250,11 +280,6 @@ footer * {
     
     .footer-resources h6 {
         font-size: .9rem;
-    }
-    
-    #company-info > h5 {
-        font-weight: bolder;
-        font-size: 1.2rem;
     }
 }
 
@@ -292,6 +317,25 @@ footer * {
         height: 60px;
 
         font-size: 1rem;
+    }
+
+    #social-proof {
+        height: 180px;
+        padding-top: 25px;
+    }
+    
+    #social-proof > h3 {
+        font-size: 1.5rem;
+    }
+    
+    #social-logos {
+        margin: 15px auto auto;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        margin: auto 7px;
     }
 }
 
@@ -333,6 +377,21 @@ footer * {
         height: 8px;
         width: 8px;
     }
+
+    #social-proof {
+        height: 200px;
+        padding-top: 25px;
+    }
+    
+    #social-proof > h3 {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+        margin: auto 15px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -345,5 +404,24 @@ footer * {
         height: 12px;
         width: 12px;
         margin-top: 8px;
+    }
+
+    #social-proof {
+        height: 268px;
+        padding-top: 30px;
+    }
+    
+    #social-proof > h3 {
+        font-size: 1.7rem;
+    }
+    
+    #social-logos {
+        margin: 15px auto auto;
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin: auto 10px;
     }
 }
