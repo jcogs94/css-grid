@@ -15,11 +15,10 @@ body {
     grid-template-columns: 100%;
     grid-template-areas: 
         "nav"
-        "fill"
+        "hero"
         "footer";
     
     min-width: 280px;
-    background-color: red;
     min-height: 100vh;
 }
 
@@ -77,7 +76,32 @@ button {
 }
 
 /* Content */
+#hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
 
+    height: 520px;
+    background-color: #F2F2F2;
+}
+
+#hero-img-placeholder {
+    border: 1px solid #000000;
+    border-radius: 2px;
+    width: 260px;
+    height: 186.27px;
+    margin: auto;
+}
+
+#hero-content {
+    margin: auto;
+}
+
+#hero-content * {
+    margin: auto;
+    padding: 5px 8px;
+}
 
 /* Footer */
 footer {
